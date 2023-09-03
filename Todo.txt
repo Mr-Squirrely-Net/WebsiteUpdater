@@ -1,0 +1,21 @@
+﻿//Todo: Add interperter for 
+	- @head
+		- @header
+	- @footer
+		- @foot
+	- @navigation
+		- @nav
+	- @scripts
+		- @script
+	- @content["contentname"]
+
+	-element["nameofelement"]
+
+	They will all look for the file that it's asking for (eg. @head will look for head.html)
+	@navigation and @nav will look for navigation.html
+	@content["contentname"] will look for the .html that corresponds to the "contentname" 
+		(eg. @content["foobar"] will look for foobar.html) 
+		at the same time @content["foobar.html"] will look for foobar.html.html cause I don't want to do more work than needed
+
+	each plugin for the new page wizard needs to have the html file called plugin.html
+		the program will then parse the file and create a new file based on the information gave and rename the file accordingly
